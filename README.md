@@ -1,6 +1,6 @@
 # MyOwnRaspberryPiCloudServer
 
-![](My_raspberry_cloud.jpg)
+![alt text](https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg)
 
 First we need to update and upgrade our Raspberry pi:
 
