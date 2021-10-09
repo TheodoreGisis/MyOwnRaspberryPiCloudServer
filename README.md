@@ -101,5 +101,9 @@ After that reboot your system:
    
    Now the last ste is to enable external storage
    
+   You will go to your Nextclound> Setings >Search for External Storage > Enable.
+   
+   Second step go to Settings>External Storage > Give a folder name > In external storage select "local" >in configuration type "/media/pistorage" and you are ready.
+   
        
 
