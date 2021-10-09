@@ -28,4 +28,13 @@ After that reboot your system:
   
        sudo wget https://download.nextcloud.com/server/releases/nextcloud-22.2.0.zip
        
+  Unzip the file 
+  
+       sudo unzip nextcloud-22.1.0.zip
+       
+  Now change ownership
+  
+       sudo chmod 750 nextcloud -R
+       sudo chown www-data:www-data nextcloud -R
+       
 
