@@ -1,4 +1,7 @@
 # MyOwnRaspberryPiCloudServer
+
+![](My_raspberry_cloud.jpg)
+
 First we need to update and upgrade our Raspberry pi:
 
        sudo apt update
