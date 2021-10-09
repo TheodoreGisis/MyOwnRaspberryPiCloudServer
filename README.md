@@ -1,8 +1,8 @@
 # MyOwnRaspberryPiCloudServer
 
-<img align="right" width="100" height="100" src="https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg">
+<img align="center" width="300" height="300" src="https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg">
 
-![alt text](https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg)
+
 
 First we need to update and upgrade our Raspberry pi:
 
