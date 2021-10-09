@@ -64,7 +64,7 @@ After that reboot your system:
     
        sudo reboot
        
-   By puting your locan ip rasbperry address in to your browser you will open nextcloud,there create your account
+   By puting your local ip rasbperry address in to your browser you will open nextcloud,there create your account
    Next we add the external storage plugin in next cloud
     
        cd /media
@@ -92,7 +92,7 @@ After that reboot your system:
    
        sudo nano /etc/fstab
        
-   At the end paste at the end  UUID=------- /media/pstorage auto defaults,uid=-------gid=------ 0 2  and then 
+   At the end paste:  UUID=------- /media/pstorage auto defaults,uid=-------gid=------ 0 2  and then 
    
        sudo mount -a
        sudo reboot
