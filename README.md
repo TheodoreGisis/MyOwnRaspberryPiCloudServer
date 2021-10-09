@@ -87,9 +87,11 @@ After that reboot your system:
    At the end paste UUID=****** /media/pstorage auto defaults,uid=**,gid=** 0 2  and then 
    
        sudo mount -a
-       reboot
+       sudo reboot
+       df -h
+   Open nextcloud in browser
    
-   
+   Now the last ste is to enable external storage
    
        
 
