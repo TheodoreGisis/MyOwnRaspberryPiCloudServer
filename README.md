@@ -105,5 +105,46 @@ After that reboot your system:
    
    Second step go to Settings>External Storage > Give a folder name > In external storage select "local" >in configuration type "/media/pistorage" and you are ready.
    
+   Now lets secure SSL
+   
+     sudo mkdir -p /etc/apache2/ssl
+     
+    Generate the certificate:
+      
+      sudo openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+      
+    Enable SSL Module:
+      
+      sudo a2enmod ssl
+      sudo systemctl restart apache2
+      
+    Modify the configuration file:
+    
+       cd /etc/apache2/sites-available
+       sudo nano default-ssl.conf
        
+    Make the change "DocumentRoot /var/www/html/nextcloud" ,"SSLCertificateFile /etc/apache2/ssl/apache.crt", "SSLCertificateKeyFile /etc/apache2/ssl/apache.key"
+    
+    Enable default SSL and restart apache
+      
+        sudo a2ensite default-ssl.conf
+        sudo service apache2 restar
 
+    Force SSL usage on NextCloud
+    
+        sudo nano /etc/apache2/sites-available/000-default.conf
+        
+     Above "ErrorLog ${APACHE_LOG_DIR}/error.log" put this: 
+     
+     RewriteEngine On
+     
+    RewriteCond %{HTTPS} off
+    
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+        
+    And then 
+    
+      sudo a2enmod rewrite
+      sudo service apache2 restart
+
+      sudo reboot
