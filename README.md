@@ -1,6 +1,9 @@
 # MyOwnRaspberryPiCloudServer
 
-<img align="center" width="300" height="300" src="https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg">
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/TheodoreGisis/MyOwnRaspberryPiCloudServer/blob/main/Raspberry_cloud/My_raspberry_cloud.jpg">
+</p>
 
 
 
