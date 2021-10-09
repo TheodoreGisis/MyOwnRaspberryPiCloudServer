@@ -65,8 +65,31 @@ After that reboot your system:
    Here we need to find our uid....Type:
     
        cut -d: -f1,3 /etc/passwd
-       
+   
+   Now look and find the one who stats with "www..." and cut the id
+   
+   After that find the gid's by typing
+   
+       getent group
       
+   Look and find again the "www..." and cut the id
+   
+   Next type
+   
+       sudo blkid
+    
+   Here cut the 'UUID'
+   
+   Finally go with nano  to 
+   
+       sudo nano /etc/fstab
+       
+   At the end paste UUID=****** /media/pstorage auto defaults,uid=**,gid=** 0 2  and then 
+   
+       sudo mount -a
+       reboot
+   
+   
    
        
 
