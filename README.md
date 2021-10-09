@@ -37,7 +37,7 @@ After that reboot your system:
        sudo chmod 750 nextcloud -R
        sudo chown www-data:www-data nextcloud -R
        
-   The next step is to create the database for nextcloud
+   The next step is to create the database for nextcloud(type one by one the following commands):
        
        sudo mysql
        CREATE USER 'nextcloud' IDENTIFIED BY 'password';
