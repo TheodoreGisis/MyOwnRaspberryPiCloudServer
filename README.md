@@ -47,5 +47,26 @@ After that reboot your system:
        quit
        sudo reboot
    
+   Now we need to change directory and with nano we enter the default.conf file
    
+       cd /etc/apache2/sites-available
+       sudo nano 000-default.conf
+      
+    Inside we must change the "DocumentRoot /var/www/html/"  in to "DocumentRoot /var/www/html/nextcloud" and then reboot our system
+    
+       sudo reboot
+       
+    By puting your locan ip rasbperry address in to your browser you will open nextcloud,there create your account
+    Next we add the external storage plugin in next cloud
+    
+       cd /media
+       sudo mkdir pstorage
+    
+    Here we need to find our uid....Type:
+    
+       cut -d: -f1,3 /etc/passwd
+       
+      
+   
+       
 
