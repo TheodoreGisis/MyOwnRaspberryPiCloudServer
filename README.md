@@ -62,7 +62,7 @@ After that reboot your system:
        cd /media
        sudo mkdir pstorage
     
-    Here we need to find our uid....Type:
+   Here we need to find our uid....Type:
     
        cut -d: -f1,3 /etc/passwd
        
