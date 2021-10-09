@@ -134,17 +134,16 @@ After that reboot your system:
     
         sudo nano /etc/apache2/sites-available/000-default.conf
         
-    Above "ErrorLog ${APACHE_LOG_DIR}/error.log" put this: 
-     
-    RewriteEngine On
-     
-    RewriteCond %{HTTPS} off
+   Above "ErrorLog ${APACHE_LOG_DIR}/error.log" put this: 
     
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+   RewriteEngine On
+     
+   RewriteCond %{HTTPS} off
+    
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
         
-    And then 
+   And then 
     
       sudo a2enmod rewrite
       sudo service apache2 restart
-
       sudo reboot
