@@ -139,11 +139,11 @@ After that reboot your system:
         
    Above "ErrorLog ${APACHE_LOG_DIR}/error.log" put this: 
     
-   RewriteEngine On
+       RewriteEngine On
      
-   RewriteCond %{HTTPS} off
+       RewriteCond %{HTTPS} off
     
-   RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+       RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
         
    And then 
     
